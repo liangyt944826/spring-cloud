@@ -22,6 +22,7 @@
         <module>user-service</module>
         <module>order-service</module>
         <module>eureka</module>
+        <module>common</module>
     </modules>
 
     <!-- 子模块继承之后，提供作用：锁定版本+子modlue不用写groupId和version  -->

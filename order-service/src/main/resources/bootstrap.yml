@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: orderservice # 服务名
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+      discovery:
+        cluster-name: hz # 集群名字
+        # namespace: e915aca7-293d-416b-a796-38506145589e # 命名空间
+      config:
+        file-extension: yaml
+        # namespace: e915aca7-293d-416b-a796-38506145589e

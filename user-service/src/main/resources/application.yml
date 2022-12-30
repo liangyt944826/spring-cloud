@@ -1,0 +1,10 @@
+server:
+  port: 6662
+spring:
+  application:
+    name: user-service
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        cluster-name: sh
