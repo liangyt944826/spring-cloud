@@ -1,6 +1,6 @@
 package com.example.userservice.controller;
 
-import entity.User;
+import com.example.common.entity.User;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;

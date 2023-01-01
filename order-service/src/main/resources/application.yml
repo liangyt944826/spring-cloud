@@ -1,2 +1,11 @@
 server:
   port: 6661 # 端口号
+feign:
+  httpclient:
+    enabled: true
+spring:
+  rabbitmq:
+    addresses: 175.24.119.94
+    port: 5672
+    username: root
+    password: root
