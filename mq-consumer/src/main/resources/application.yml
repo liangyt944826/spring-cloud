@@ -1,0 +1,7 @@
+spring:
+  rabbitmq:
+    port: 5672
+    username: root
+    password: root
+    host: 175.24.119.94
+

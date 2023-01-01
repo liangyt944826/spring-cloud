@@ -1,0 +1,20 @@
+server:
+  port: 4000
+spring:
+  application:
+    name: gateway
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+    gateway:
+      routes:
+        - id: orderservice # ??
+          uri: lb://orderservice # lb ???? orderservice ???
+          predicates: # 断言，满足条件才会转发请求
+            - Path=/order/** # 路径断言
+            #- After=2025-01-20T17:42:47.789-07:00[Asia/Shanghai] # 时间后断言
+            - Before=2025-01-20T17:42:47.789-07:00[Asia/Shanghai] # 时间前断言
+            #- Between=2017-01-20T17:42:47.789-07:00[America/Denver], 2017-01-21T17:42:47.789-07:00[America/Denver] # 时间之间
+            #- Method=GET,POST # 请求方式
+          filters: # 可以对请求或者响应进行增强
+            - AddRequestHeader=X-Request-red, blue # 添加请求头
