@@ -23,6 +23,8 @@
         <module>order-service</module>
         <module>gateway</module>
         <module>common</module>
+        <module>mq-consumer</module>
+        <module>elasticsearch</module>
     </modules>
 
     <!-- 子模块继承之后，提供作用：锁定版本+子modlue不用写groupId和version  -->
@@ -39,6 +41,11 @@
             <!--            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>-->
             <!--        </dependency>-->
 
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>1.2.76</version>
+            </dependency>
             <!--spring boot 2.2.5-->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
